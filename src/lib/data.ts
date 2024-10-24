@@ -738,3 +738,16 @@ export const getQueriedResponse= async (query:any)=>{
         // return err;
     }
 }
+export const getCategories= async()=>{
+    try {
+        connectToDb();
+        const categories = await ScoreCard.aggregate([
+            { $unwind: "$questions" }, // Unwind the questions array
+            { $group: { _id: "$questions.category" } }, // Group by category
+            { $sort: { _id: 1 } } // Optional: Sort categories alphabetically
+        ]);
+        return categories;
+    } catch (error) {
+        console.log(error);
+    }
+}
