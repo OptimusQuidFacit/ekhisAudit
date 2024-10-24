@@ -29,7 +29,7 @@ const ResponsePage = () => {
            ;
         }
         fetchResponses();
-    }, [adminLGA, adminQuarter, adminYear])
+    }, [adminLGA, adminQuarter, adminYear, query])
     return (
         <div className="h-full">
             {

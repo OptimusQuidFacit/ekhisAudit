@@ -20,7 +20,7 @@ const ListInput = ({options, title, placeHolder, onChange, value}:props) => {
                     {
                         options.filter(item=>!value?true:item.toLowerCase().includes(value?.toLowerCase() as string))
                         .map(option=>
-                            <option onClick={()=>onChange(option)} className="text-white cursor-pointer hover:bg-white hover:text-black px-3">
+                            <option key={option} onClick={()=>onChange(option)} className="text-white cursor-pointer hover:bg-white hover:text-black px-3">
                                 {option}
                             </option>
                         )
