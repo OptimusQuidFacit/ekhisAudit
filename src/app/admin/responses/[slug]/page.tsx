@@ -3,7 +3,7 @@ import { scoreCardType } from "@/lib/models/scoreCard";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import Link from "next/link";
 
-const page = async ({params}: Params) => {
+const page = async ({params}: {params: Params}) => {
     const {slug}= params;
     const scoreCard= await getResponse(slug) as scoreCardType;
     const answeredQuestions= scoreCard.questions.filter(question=>question.isAnswered)
