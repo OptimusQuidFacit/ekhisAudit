@@ -37,7 +37,7 @@ const VisualizationRow = ({facility, categoryNames, index}:props) => {
         setIsLoading(false);
       }
       fetchData()
-    }, [adminQuarter, adminYear, facility, query])
+    }, [adminQuarter, adminYear, facility])
     let noOfAnswered=scoreCard?.questions?.filter((question: questionType)=>question.isAnswered).length;
     let totalNoOfQuestions=scoreCard?.questions?.length;
     let isComplete= noOfAnswered===totalNoOfQuestions;
