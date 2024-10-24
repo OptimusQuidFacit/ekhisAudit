@@ -24,7 +24,11 @@ export const updateChecklist = async (prevState: any, formData: any)=>{
                 msg:"Successfully Updated"
             }
             // console.log("Successfully updated", questionId)
-    } catch (error) {
+    } catch (error:any) {
+        if(error.message.includes("NEXT_REDIRECT")){
+            // throw error;
+            console.log(error);
+        }
         console.log(error)
     }
 }

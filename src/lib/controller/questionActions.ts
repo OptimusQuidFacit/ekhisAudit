@@ -34,7 +34,8 @@ export const initializeScoreCard= async (prevState:any, formData:any)=>{
     catch(err:any){
         console.log(err);
         if(err.message.includes("NEXT_REDIRECT")){
-            throw err;
+            // throw err;
+            console.log(err);
         }
         if(err.message.includes("ETIMEOUT")){
             return {
