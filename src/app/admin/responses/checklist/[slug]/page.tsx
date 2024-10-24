@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { getResponse, questionType } from "@/lib/data";
 import { scoreCardType } from "@/lib/models/scoreCard";
 // import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
