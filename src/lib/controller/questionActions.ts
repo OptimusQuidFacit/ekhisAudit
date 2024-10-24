@@ -20,14 +20,19 @@ export const initializeScoreCard= async (prevState:any, formData:any)=>{
         let facilityScoreCard= await ScoreCard.findOne({LGA, facility, "period.year":year, "period.quarter":quarter})
         if(facilityScoreCard){
             // console.log("found")
-            redirect(`/questions/${facilityScoreCard._id}`);
-            return;
+            // redirect(`/questions/${facilityScoreCard._id}`);
+            return {
+                msg: facilityScoreCard._id
+            }
         }
         else {
             // console.log('Not found');
             let scoreCardObject = new ScoreCard({LGA, facility, period, questions, checkList: supervisoryChecklist})
             let newScoreCard = await scoreCardObject.save();
-            redirect(`/questions/${newScoreCard._id}`);
+            // redirect(`/questions/${newScoreCard._id}`);
+            return {
+                msg: facilityScoreCard._id
+            }
         }
         
     }
