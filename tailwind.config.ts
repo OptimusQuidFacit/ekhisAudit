@@ -9,11 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary:"#1cbad3",
+        secondary: "#F2AE24",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      
     },
+    patterns:{
+      colors: {
+        yellow: "#F2AE24",
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-bg-patterns'),
+    require('tailwindcss-filters')
+  ],
 };
 export default config;
