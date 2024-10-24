@@ -13,5 +13,6 @@ import { NextRequest, NextResponse } from "next/server";
      }
      catch(err){
         console.log(err)
+        return NextResponse.json(err)
      }
 }
