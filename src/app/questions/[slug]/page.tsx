@@ -1,12 +1,12 @@
 import Question from "@/components/Question";
-import { getQuestions, questions, questionType } from "@/lib/data";
+import { getQuestions, questionType } from "@/lib/data";
 // import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home({params}:any) {
   const {slug}= params;
-  console.log(slug);
+  // console.log(slug);
   let questions= await getQuestions(slug as string);
   let unAnsweredQuestions= questions?.filter((question: questionType)=>!question.isAnswered) as questionType[]
   let currentQuestion= unAnsweredQuestions[0]

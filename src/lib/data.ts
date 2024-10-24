@@ -505,6 +505,7 @@ const questionsArray:questionType[]=[
 ]
 export const getQuestions=async (cardId:string)=>{
     try {
+        connectToDb();
         let scoreCard = await ScoreCard.findOne({_id:cardId}).lean<scoreCardType>();
         if(scoreCard){
             return scoreCard.questions;
