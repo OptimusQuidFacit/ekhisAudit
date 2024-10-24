@@ -15,9 +15,9 @@ const InitialForm = () => {
     const [state, formAction]= useFormState(initializeScoreCard, null);
     const date= new Date()
     let router= useRouter()
-    useEffect(() => {
-       state?.msg&&router.push(`/questions/${state.msg}`)
-    }, [state])
+    // useEffect(() => {
+    state?.msg&&router.push(`/questions/${state.msg}`)
+    // }, [state])
     
     return (
         <form action={formAction} className="m-3 w-[300px] h-[450px] flex flex-col items-center justify-center gap-3 glass p-6 rounded-xl shadow-lg backdrop-blur-lg bg-white/30 border border-white/30">
