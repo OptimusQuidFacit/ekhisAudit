@@ -1,7 +1,5 @@
-import AdminMenu from "@/components/adminComponents/AdminMenu";
 import ResponsePage from "@/components/adminComponents/ResponsePage";
-import { getResponses, questionType } from "@/lib/data";
-import Link from "next/link";
+
 
 const page = async () => {
     // const response= await getResponses("Ado");

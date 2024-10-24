@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 import VisualizationBoard from "@/components/adminComponents/VisualizationBoard";
 import ScoreCard from "@/lib/models/scoreCard";
 
