@@ -13,10 +13,10 @@ const InitialForm = () => {
     const [LGA, setLGA] = useState<string|null>(null);
     const [facility, setFacility] = useState<string|null>(null);
     const [state, formAction]= useFormState(initializeScoreCard, null);
-    const date= new Date()
-    let router= useRouter()
+    const date= new Date();
+    // let router= useRouter();
     // useEffect(() => {
-    state?.msg&&router.push(`/questions/${state.msg}`)
+    // state?.msg&&router.push(`/questions/${state.msg}`)
     // }, [state])
     
     return (
