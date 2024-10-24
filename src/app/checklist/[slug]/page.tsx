@@ -1,10 +1,10 @@
 import CheckList from "@/components/CheckList";
 import { checkListType, getChecklist, questionType } from "@/lib/data";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
+// import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Home({params}:Params) {
+export default async function Home({params}:any) {
   const { slug }= params;
   // console.log(slug);
   let questions= await getChecklist(slug as string);
