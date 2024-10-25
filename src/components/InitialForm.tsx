@@ -20,7 +20,7 @@ const InitialForm = () => {
     // }, [state])
     
     return (
-        <form action={formAction} className="m-3 w-[300px] h-[450px] flex flex-col items-center justify-center gap-3 glass p-6 rounded-xl shadow-lg backdrop-blur-lg bg-white/30 border border-white/30">
+        <form action={formAction} className="m-3 w-[300px] h-[450px] flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white shadow-xl">
             <h1 className="text-lg md:text-xl text-secondary font-bold text-center">
                 Welcome! Start your M&E session...
             </h1>

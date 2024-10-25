@@ -17,7 +17,7 @@ export default async function Home({params}:any) {
       <main className="sm:items-start w-full h-full">
         <div className="flex h-full gap-2 w-full 
         pattern-cross pattern-yellow-500 pattern-bg-white
-        pattern-size-6">
+        pattern-size-6 opacity-100">
           <div  className="relative h-[100vh] flex-1">
             <Image fill src={`/ekhisteam.jpg`} alt="A photo of the Ekhis audit team at ekhis" className="object-cover flex-1"/>
           </div>

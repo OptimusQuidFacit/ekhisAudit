@@ -30,7 +30,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           {user.isAdmin&&<Menu/>}
-          <main className="h-[94.9vh] w-screen overflow-hidden max-h-1000px">
+          <main className="h-[94.9vh] w-screen overflow-hidden max-h-1000px bg-white">
             {children}
           </main>
         </body>
