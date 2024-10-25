@@ -14,7 +14,7 @@ const page = ({children}: Readonly<{
                     </div>
                     <LgaChoose/>
                 </div>
-                <div className="p-3 h-[80vh] md:h-[90vh] max-w-[98vw] md:max-w-[75vw] lg:max-w-[80vw] xl:max-w-full flex-[1]">   
+                <div className="p-3 h-[75vh] md:h-[85vh] max-w-[95vw] md:max-w-[75vw] lg:max-w-[80vw] xl:max-w-full flex-[1]">   
                     <DateFilter/>                
                     {children}
                 </div>

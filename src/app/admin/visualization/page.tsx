@@ -9,7 +9,7 @@ const page = async () => {
     // console.log(categoryNames);
     return (
         <div className="p-3 h-full w-full overflow-scroll">
-            <main className="h-full min-w-[900px]">
+            <main className="h-full min-w-[950px]">
                 <VisualizationBoard categoryNames={categoryNames}/>
             </main>
         </div>
