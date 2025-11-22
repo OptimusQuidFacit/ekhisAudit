@@ -5,7 +5,7 @@ import Loading from "./loader/Loading";
 
 type props={
     text:string,
-    color:string,
+    color?:string,
     handleClick?:(e:any)=>void,
     width?:string
 

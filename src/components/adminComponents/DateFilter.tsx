@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 const DateFilter = () => {
     const pathname= usePathname();
+    const date= new Date()
 const {setAdminQuarter, setAdminYear}= useContext(appContext) as appcontextType
     return (
         <>
@@ -17,7 +18,7 @@ const {setAdminQuarter, setAdminYear}= useContext(appContext) as appcontextType
                     <option>Q3</option>
                     <option>Q4</option>
                 </select>
-                <input onChange={(e)=>setAdminYear(parseInt(e.target.value))} className="border-primary border-2 p-2 w-[100px] rounded-xl" type="number" name="year" id="year" defaultValue={2024}/>
+                <input onChange={(e)=>setAdminYear(parseInt(e.target.value))} className="border-primary border-2 p-2 w-[100px] rounded-xl" type="number" name="year" id="year" defaultValue={date.getFullYear()}/>
             </div>
             }
         </>
